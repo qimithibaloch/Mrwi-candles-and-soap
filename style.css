@@ -1,0 +1,128 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Logo Section */
+.logo {
+    text-align: center;
+    margin-top: 20px; /* Space between logo and header */
+}
+
+.logo img {
+    width: 150px; /* Adjust the size of the logo image */
+    height: auto;
+}
+
+/* Header Section */
+header {
+    background-color: #ff9e6f; /* Soft candle color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.dropdown button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 15px;
+    font-size: 1.1em;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Product Section */
+.product-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 10%;
+}
+
+.product {
+    text-align: center;
+    width: 250px;
+    margin: 0 10px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product h3 {
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: #ff6f61;
+}
+
+.product p {
+    font-size: 1em;
+    color: #777;
+    margin: 10px 0;
+}
+
+/* Footer Section */
+footer {
+    background-color: #ff9e6f;
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+footer .social-links {
+    margin-top: 10px;
+}
+
+footer .social-links a {
+    margin: 0 15px;
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+footer .social-links a:hover {
+    color: #ff6f61;
+}
