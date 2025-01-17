@@ -47,5 +47,14 @@
         </div>
     </footer>
 
+    <script>
+        // JavaScript for mobile dropdown toggle
+        const dropdownButton = document.querySelector('.dropdown button');
+        const dropdownContent = document.querySelector('.dropdown .dropdown-content');
+
+        dropdownButton.addEventListener('click', () => {
+            dropdownContent.classList.toggle('show');
+        });
+    </script>
 </body>
 </html>
