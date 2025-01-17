@@ -64,7 +64,35 @@ header {
     background-color: #ddd;
 }
 
-.dropdown:hover .dropdown-content {
+/* Mobile-specific styles for dropdown menu */
+@media (max-width: 768px) {
+    .dropdown-content {
+        position: relative; /* Avoid absolute positioning issues on small screens */
+        width: 100%; /* Ensure the dropdown takes the full width of the screen */
+    }
+
+    /* Optional: Change the button to be more mobile-friendly */
+    .dropdown button {
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+    }
+
+    /* Make sure the dropdown items are clearly visible */
+    .dropdown-content a {
+        padding: 10px;
+    }
+}
+
+/* Add a hover effect for desktop and larger screens */
+@media (min-width: 769px) {
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+}
+
+/* Show dropdown on mobile when toggled */
+.dropdown .dropdown-content.show {
     display: block;
 }
 
